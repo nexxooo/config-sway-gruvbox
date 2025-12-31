@@ -23,7 +23,13 @@ local opts = {}
 require("lazy").setup("plugins")
 vim.opt.scrolloff = 18
 
+vim.keymap.set('n','<leader>bv',':vs<CR>',{desc ="buffer verticale"})
+vim.keymap.set('n','<leader>bh',':sp<CR>',{desc ="buffer horizontale"})
+vim.keymap.set('n','<leader>bt',':term<CR>',{desc ="terminale"})
+
+vim.cmd([[
+  autocmd TermOpen * tnoremap <buffer> <Esc> <C-\><C-n>
+]])
 
 
-
-
+vim.opt.clipboard = "unnamedplus"

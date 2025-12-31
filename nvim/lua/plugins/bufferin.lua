@@ -10,5 +10,5 @@ return {
 		-- 'willothy/nvim-cokeline',     -- For buffer line integration
 		--'akinsho/bufferline.nvim',    -- Alternative buffer line
 	},
-	vim.keymap.set('n', '<leader>bb', '<cmd>Bufferin<cr>', { desc = 'Toggle Bufferin' })
+	vim.keymap.set('n', '<leader>bb', '<cmd>Bufferin<cr>', { desc = 'tab' })
 }

@@ -5,7 +5,7 @@ return {
 	init = function()
 		vim.g.mkdp_filetypes = { "markdown" }
 		vim.g.mkdp_browser = "firefox"
-		vim.keymap.set('n', '<leader>mp' ,':MarkdownPreviewToggle<CR>')
+		vim.keymap.set('n', '<leader>mp' ,':MarkdownPreviewToggle<CR>',{desc ="toggle previewn"})
 	end,
 	ft = { "markdown" },
 }

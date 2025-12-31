@@ -15,6 +15,6 @@ return {
 				null_ls.builtins.formatting.shfmt.with({ filetypes = { "sh", "bash", "zsh" } }),
 			},
 		})
-		vim.keymap.set("n", "<leader>f", vim.lsp.buf.format, {})
+		vim.keymap.set("n", "<leader>f", vim.lsp.buf.format, {desc = "format" })
 	end,
 }
