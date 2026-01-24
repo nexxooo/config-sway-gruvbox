@@ -1,7 +1,5 @@
 vim.lsp.enable({
-	"lua_ls",
-	"jdtls",
-	"omnisharp"
+	"lua_ls"
 })
 
 vim.diagnostic.config({
