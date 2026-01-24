@@ -3,9 +3,9 @@ vim.lsp.enable({
 })
 
 vim.diagnostic.config({
-	virtual_lines=true,
+	--virtual_lines=true,
 	virtual_text=true,
-	updtae_in_insert = false,
+	update_in_insert = false,
 	severity_sort=true,
 
 	float={
