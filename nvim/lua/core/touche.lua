@@ -22,3 +22,9 @@ vim.keymap.set("n", "<leader>e", ":Neotree filesystem reveal left<CR>", { desc =
 vim.keymap.set("n", "<leader>f", function()
   require("conform").format({ lsp_fallback = true })
 end, { desc = "Formatage du fichier" })
+--buffer--
+vim.keymap.set('n','<leader>bv',':vs<CR>',{desc ="buffer verticale"})
+vim.keymap.set('n','<leader>bh',':sp<CR>',{desc ="buffer horizontale"})
+vim.keymap.set('n','<leader>bt',':term<CR>',{desc ="terminale"})
+
+
