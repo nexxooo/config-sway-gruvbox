@@ -13,6 +13,8 @@ return {
 				null_ls.builtins.diagnostics.shellcheck,
 				null_ls.builtins.diagnostics.ruff,
 				null_ls.builtins.formatting.shfmt.with({ filetypes = { "sh", "bash", "zsh" } }),
+				--null_ls.builtins.diagnostics.jdtls,
+				--null_ls.builtins.formatting.jdtls,
 			},
 		})
 		vim.keymap.set("n", "<leader>f", vim.lsp.buf.format, {desc = "format" })

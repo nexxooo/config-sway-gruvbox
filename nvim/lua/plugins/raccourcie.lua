@@ -13,6 +13,7 @@ return {
 			{"<leader>m" , group = "Markdown", icon =" "},
 			{"<leader>c" , group = "code", icon = " "},
 			{"<leader>t" , group = "telescope"},
+			{"<leader>d" , group = "debug"},
 		}
   },
 }
