@@ -9,8 +9,6 @@ return {
 		}})
 
 	end,
-},
+}
 
-vim.keymap.set("n", "<leader>f", function()
-  require("conform").format({ lsp_fallback = true })
-end, { desc = "Formatage du fichier" })
+

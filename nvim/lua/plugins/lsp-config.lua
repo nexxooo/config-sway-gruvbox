@@ -18,9 +18,9 @@ return {
           if not client then return end
 
           -- ACTIVER L'AUTOCOMPLÉTION NATIVE (Remplace nvim-cmp)
-          --if client.supports_method('textDocument/completion') then
-            --vim.lsp.completion.enable(true, client.id, args.buf)
-          --end
+          if client.supports_method('textDocument/completion') then
+            vim.lsp.completion.enable(true, client.id, args.buf)
+          end
 
           -- ACTIVER L'INLAY HINTS (Indices de types/paramètres)
           if client.supports_method('textDocument/inlayHint') then

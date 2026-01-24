@@ -33,3 +33,5 @@ vim.cmd([[
 
 
 vim.opt.clipboard = "unnamedplus"
+require("core.lsp")
+require("core.touche")
