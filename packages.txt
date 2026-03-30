@@ -1,0 +1,5 @@
+steam 
+discord
+neovim 
+kitty
+fastfetch
