@@ -5,7 +5,9 @@ return {
 		require("conform").setup({
 			formatters_by_ft={
 				lua={"stylua"},
-				csharp={"csharpier"}
+				csharp={"csharpier"},
+				java={"jdtls"},
+				python={"ruff"}
 		}})
 
 	end,

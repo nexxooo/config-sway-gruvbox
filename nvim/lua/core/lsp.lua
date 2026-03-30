@@ -1,10 +1,12 @@
 vim.lsp.enable({
-	"lua_ls"
+	"lua_ls",
+	"jdtls",
+	"omnisharp"
 })
 
 vim.diagnostic.config({
-	virtual_lines=true,
-	--virtual_text=true,
+	--vtirtual_lines=true,
+	virtual_text=true,
 	update_in_insert = false,
 	severity_sort=true,
 

@@ -31,7 +31,7 @@ vim.cmd([[
   autocmd TermOpen * tnoremap <buffer> <Esc> <C-\><C-n>
 ]])
 
-
+vim.opt.wrap= false 
 vim.opt.clipboard = "unnamedplus"
 require("core.lsp")
 require("core.touche")

@@ -9,6 +9,8 @@ return {
 		local dapui = require("dapui")
 		dapui.setup()
 
+
+		-- 3. LISTENERS POUR L'INTERFACE (Auto-open/close)
 		dap.listeners.before.attach.dapui_config = function()
 			dapui.open()
 		end
@@ -22,42 +24,31 @@ return {
 			dapui.close()
 		end
 
+		-- 4. VOS RACCOURCIS CLAVIER (DÉJÀ CONFIGURÉS)
 		vim.keymap.set("n", "<Leader>db", function()
 			dap.toggle_breakpoint()
-		end, {desc="toggle breakpoint"})
+		end, { desc = "toggle breakpoint" })
 
 		vim.keymap.set("n", "<Leader>dc", function()
 			dap.continue()
-		end, {desc="lancer"})
+		end, { desc = "lancer" })
+
 		vim.keymap.set("n", "<Leader>do", function()
 			dap.step_over()
-		end, {desc ="ligne suivante"})
+		end, { desc = "ligne suivante" })
+
 		vim.keymap.set("n", "<Leader>di", function()
 			dap.step_into()
-		end, {desc="entrer fonction"})
+		end, { desc = "entrer fonction" })
+
 		vim.keymap.set("n", "<Leader>du", function()
 			dap.step_out()
-		end, {desc="sortir fonction"})
-		-- Leader + dB (majuscule) pour un point d'arrêt avec condition
-		vim.keymap.set("n", "<Leader>dB", function()
-			require("dap").set_breakpoint(vim.fn.input("Breakpoint condition: "))
-		end, { desc = "Breakpoint Conditionnel" })
+		end, { desc = "sortir fonction" })
 
-		vim.keymap.set("n", "<Leader>dh", function()
-			require("dap").set_breakpoint(nil, vim.fn.input("Nombre de passages (Hit count): "))
-		end, { desc = "Breakpoint Hit Count" })
-
-		-- Log Point (Affiche un message au lieu de s'arrêter)
-		vim.keymap.set("n", "<Leader>dl", function()
-			require("dap").set_breakpoint(nil, nil, vim.fn.input("Message de log: "))
-		end, { desc = "Log Point" })
-
+		-- 5. AUTRES ADAPTATEURS (C/C++)
 		dap.adapters.codelldb = {
 			type = "executable",
-			command = "codelldb", -- or if not in $PATH: "/absolute/path/to/codelldb"
-
-			-- On windows you may have to uncomment this:
-			-- detached = false,
+			command = "codelldb",
 		}
 		dap.configurations.c = {
 			{

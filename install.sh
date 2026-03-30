@@ -27,21 +27,24 @@ unzip -o /tmp/JetBrainsMono.zip -d ~/.local/share/fonts/JetBrainsMono
 rm /tmp/JetBrainsMono.zip
 fc-cache -fv
 
+echo "changement de shell..."
+sudo chsh -s $(which zsh) $USER
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
 echo "install des dotfilles..."
 mkdir -p ~/.config
 cp -r kitty ~/.config/
-cp -r fastfetch ~/.config 
+cp -r fastfetch ~/.config
+cp -r .zshrc ~/ 
 
-cd ~/tmp 
+cd /tmp 
 git clone https://github.com/nexxooo/nvim.git
 cp -r nvim ~/.config/ 
 
 
-echo "changement de shell..."
-sudo chsh -s $(which zsh) $USER
-# Installation de Oh My Zsh sans lancer le shell immédiatement
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 
-
+echo "reboot ..."
+sleep 15 
+reboot 
 
