@@ -34,11 +34,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 echo "install des dotfilles..."
 mkdir -p ~/.config
 cp -r kitty ~/.config/
-cp -r fastfetch ~/.config
+cp -r fastfetch ~/.config/
 cp -r .zshrc ~/ 
-
-cd /tmp 
-git clone https://github.com/nexxooo/nvim.git
 cp -r nvim ~/.config/ 
 
 
