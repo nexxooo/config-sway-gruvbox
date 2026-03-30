@@ -2,7 +2,7 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 export PATH="$HOME/.local/bin:$PATH"
 export EDITOR="nvim"
 export VISUAL="nvim"
-
+export TERM=xterm-kitty
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
