@@ -39,6 +39,15 @@ cp -r .zshrc ~/
 cp -r nvim ~/.config/ 
 
 
+echo "gestionnaire de fénetre: \n 1) gnome \n 2) sway 3) par defaut"
+read -r choix 
+
+if [ "$choix" = 1 ]; then
+	./gnome.sh
+fi
+if [ "$choix" = 2 ]; then
+	./sway.sh
+fi
 
 
 echo "reboot ..."
