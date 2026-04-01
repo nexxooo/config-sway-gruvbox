@@ -5,5 +5,5 @@ You can use the script for install my config, you can choose between sway or gno
 
 
 ## Work in progress 
-[] script gnome 
-[] script sway 
+- [ ] script gnome 
+- [ ] script sway 
