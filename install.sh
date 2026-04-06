@@ -13,7 +13,7 @@ sudo dnf install -y $(cat packages.txt)
 flatpak install flathub app.zen_browser.zen
 flatpak install flathub com.spotify.Client
 flatpak install flathub md.obsidian.Obsidian
-
+flatpak com.mattjakeman.ExtensionManager
 echo "Installation de JetBrains Mono Nerd Font..."
 
 mkdir -p ~/.local/share/fonts
