@@ -4,3 +4,5 @@ neovim
 kitty
 fastfetch
 zsh
+luarocks
+gnome-tweaks

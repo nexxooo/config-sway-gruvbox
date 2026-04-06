@@ -44,9 +44,6 @@ echo "Configuration des extensions..."
 gdbus call --session --dest org.gnome.Shell --object-path /org/gnome/Shell --method org.gnome.Shell.Extensions.InstallRemoteExtension "''" > /dev/null 2>&1
 sleep 5
 
-gnome-extensions enable dash-to-dock@micxgx.gmail.com
-gnome-extensions enable appindicatorsupport@rgcjonas.gmail.com
-gnome-extensions enable gpaste@gnome-shell-extensions.gnome.org
 
 gnome-extensions disable background-logo@fedorahosted.org
 
