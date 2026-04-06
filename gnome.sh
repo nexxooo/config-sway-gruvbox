@@ -14,7 +14,7 @@ gsettings set org.gnome.desktop.background picture-uri-dark "$WALLPAPER_PATH"
 gsettings set org.gnome.desktop.background picture-options 'zoom'
 
 echo "Config Paramètre"
-gsettings set org.gnome.desktop.peripherals.mouse acceleration-profile 'flat'
+gsettings set org.gnome.desktop.peripherals.mouse accel-profile 'flat'
 gsettings set org.gnome.desktop.peripherals.mouse speed 0.0
 gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
 gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,maximize,close'
@@ -41,7 +41,7 @@ sudo dnf install -y \
 
 
 echo "Configuration des extensions..."
-
+gdbus call --session --dest org.gnome.Shell --object-path /org/gnome/Shell --method org.gnome.Shell.Extensions.InstallRemoteExtension "''" > /dev/null 2>&1
 sleep 5
 
 gnome-extensions enable dash-to-dock@micxgx.gmail.com
