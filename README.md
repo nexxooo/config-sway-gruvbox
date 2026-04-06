@@ -1,5 +1,6 @@
 # A simple config sway with gruvbox theme 
 ![preview](asset/image.png)
+![preview](asset/gnome.png)
 ## Install 
 You can use the script for install my config, you can choose between sway or gnome 
 
